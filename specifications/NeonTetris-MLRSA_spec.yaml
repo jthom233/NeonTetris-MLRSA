@@ -1,0 +1,86 @@
+architecture: {}
+description: Modern neon tetris game with deep features and addicting progression
+  through levels
+name: NeonTetris-MLRSA
+phases:
+- agents:
+  - meta_architect
+  description: Design system architecture
+  outputs:
+  - architecture.json
+  parallel: false
+  phase: architecture
+- agents:
+  - spec_writer
+  description: Create detailed specifications
+  outputs:
+  - specifications/
+  parallel: false
+  phase: specification
+- agents:
+  - code_generator
+  - code_generator
+  - code_generator
+  description: Generate code from specifications
+  outputs:
+  - src/
+  - tests/
+  parallel: true
+  phase: implementation
+- agents:
+  - creative_director
+  description: Generate creative content
+  outputs:
+  - content/
+  parallel: false
+  phase: creative_content
+- agents:
+  - tester
+  - validator
+  description: Comprehensive testing and validation
+  outputs:
+  - test_results.json
+  - coverage.html
+  parallel: true
+  phase: testing
+- agents:
+  - optimizer
+  description: Optimize performance and security
+  outputs:
+  - optimized_src/
+  parallel: false
+  phase: optimization
+- agents:
+  - polish_director
+  description: Polish and refine the system
+  outputs:
+  - polish_report.json
+  parallel: false
+  phase: polish
+polish_config:
+  iteration_cycles: 3
+  metrics_tracked:
+  - performance
+  - errors
+  - user_satisfaction
+  modes:
+  - interactive
+  - autonomous
+  - vibe_adjust
+requirements:
+  functional: Modern neon tetris game with deep features and addicting progression
+    through levels
+  project_type: game
+  quality_requirements:
+  - Zero compilation errors
+  - 90%+ test coverage
+  - Security best practices
+  - Performance optimized
+  - Fully documented
+  scale_target: 100
+validation_criteria:
+- All tests pass
+- No security vulnerabilities
+- Meets performance targets
+- Documentation complete
+- Deployment successful

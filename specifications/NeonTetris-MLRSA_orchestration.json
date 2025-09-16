@@ -1,0 +1,15 @@
+{
+  "project": "NeonTetris-MLRSA",
+  "specification_file": "NeonTetris-MLRSA_spec.yaml",
+  "instructions_file": "NeonTetris-MLRSA_instructions.md",
+  "execution_mode": "autonomous",
+  "mcp_config": {
+    "server": "claude-code",
+    "workspace": "C:\\Users\\dr4zz\\Projects\\NeonTetris-MLRSA\\NeonTetris-MLRSA",
+    "agents": {
+      "max_concurrent": 5,
+      "timeout_minutes": 30
+    }
+  },
+  "command": "claude --mcp-server claude-code --execute NeonTetris-MLRSA_instructions.md"
+}
